@@ -1,9 +1,7 @@
 'use strict';
 
-import Module from './wasm/webassembly_codec_wrapper.js';
-
 let lyraModule;
-Module().then((module) => {
+import('./wasm/webassembly_codec_wrapper.js').then((module) => {
     console.log("Initialized Lyra's wasmModule.");
     lyraModule = module;
 }).catch(e => {
