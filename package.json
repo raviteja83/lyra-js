@@ -1,13 +1,14 @@
 {
   "name": "lyra-codec",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "A library that allows the Lyra neural codec to be used on web browsers.",
   "main": "lyra.js",
   "module": "dist/lyra_bundle.js",
   "scripts": {
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "postinstall": "npm run build"
   },
   "files": ["dist/*"],
   "repository": {
