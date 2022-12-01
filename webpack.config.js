@@ -16,6 +16,7 @@ module.exports = {
         library: {
             type: 'module',
         },
+        publicPath: ""
     },
     mode: "production",
 };
